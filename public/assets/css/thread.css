@@ -1,0 +1,78 @@
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.sessions {
+  margin-top: 2rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+li.sessions-child {
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #fdbbbb;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+li.sessions-child:last-child {
+  border: 0px;
+  padding-bottom: 0;
+}
+li.sessions-child:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #f56a6a;
+  box-shadow: 3px 3px 0px #fdbbbb;
+  box-shadow: 3px 3px 0px #fdbbbb;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+
+.time {
+  color: #2a2839;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+@media screen and (min-width: 601px) {
+  .time {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .time {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+  }
+}
+
+.sessions-child p {
+  width: 100%;
+  text-align: justify;
+  color: #4f4f4f;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-top: 0.4rem;
+}
+@media screen and (max-width: 600px) {
+  .sessions-child p {
+    font-size: 0.9rem;
+  }
+}
+.sessions-child img {
+  height: 50vh;
+  padding-top: 20px;
+  max-width: 80vw;
+}
+
+.pad-25 {
+  padding-left: 25px;
+}
+
+/*# sourceMappingURL=thread.css.map */
