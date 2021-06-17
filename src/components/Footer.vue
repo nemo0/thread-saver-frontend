@@ -1,9 +1,8 @@
 <template>
   <footer>
     <ul class="icons">
-      <li id="footer">nemo</li>
-      <li><a href="#">Github</a></li>
-      <li>Theme Inspired from <a href="">Editorial by HTML5Up</a></li>
+      <li id="footer">&copy; <a href="https://nemotivity.dev">nemo</a></li>
+      <li><a href="https://github.com/nemo0">Github</a></li>
     </ul>
   </footer>
 </template>

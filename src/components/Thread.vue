@@ -20,9 +20,13 @@
           :username="d[0].username"
           :tweetUrl="d[0].tweetUrl"
           :image="d[0].media"
+          :time="d[0].createdAt"
         />
       </template>
     </template>
+    <div class="btn-right">
+      <a @click="$router.go(-1)" class="button small">Go Back</a>
+    </div>
   </div>
 </template>
 <script>
@@ -74,3 +78,9 @@ export default {
   },
 };
 </script>
+<style scoped>
+.btn-right {
+  display: flex;
+  justify-content: flex-end;
+}
+</style>

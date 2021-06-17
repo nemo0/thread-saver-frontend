@@ -11,6 +11,9 @@
         />
       </template>
     </div>
+    <div class="btn-class">
+      <a href="/allthread" class="button primary tc">All Threads</a>
+    </div>
   </div>
 </template>
 
@@ -63,3 +66,10 @@ export default {
   },
 };
 </script>
+<style>
+.btn-class {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+</style>

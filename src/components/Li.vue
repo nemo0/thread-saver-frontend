@@ -1,6 +1,6 @@
 <template>
   <li class="sessions-child">
-    <div class="time">time</div>
+    <div class="time">{{ time }}</div>
     <h5>
       Tweet By:
       <a
@@ -26,13 +26,16 @@
     >
       Tweet URL
     </a>
+    <go-top bg-color="#F56A6A" :size="50" :bottom="20"></go-top>
   </li>
 </template>
 <script>
-// import ThreadImage from "./ThreadImage.vue";
+import GoTop from "@inotom/vue-go-top";
 export default {
   name: "Li",
-  components: {},
+  components: {
+    GoTop,
+  },
   props: [
     "user",
     "username",

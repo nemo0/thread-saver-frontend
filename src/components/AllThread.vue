@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2 class="all-thread">All of Your Saved Threads</h2>
     <div class="posts">
       <template v-for="thread in data">
         <Card
@@ -10,16 +11,19 @@
         />
       </template>
     </div>
+    <go-top bg-color="#F56A6A"></go-top>
   </div>
 </template>
 
 <script>
 import Card from "./Card.vue";
 import axios from "axios";
+import GoTop from "@inotom/vue-go-top";
 export default {
   name: "Home",
   components: {
     Card,
+    GoTop,
   },
   data() {
     return {
@@ -59,3 +63,9 @@ export default {
   },
 };
 </script>
+<style scoped>
+.all-thread {
+  padding: 10px 0;
+  text-align: center;
+}
+</style>
