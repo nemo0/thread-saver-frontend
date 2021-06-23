@@ -50,6 +50,6 @@ export default {
 </script>
 <style scoped>
 .pre-formatted {
-  white-space: pre;
+  white-space: pre-wrap;
 }
 </style>
