@@ -11,7 +11,7 @@
         {{ user }}
       </a>
     </h5>
-    <p>{{ text }}</p>
+    <div class="pre-formatted">{{ text }}</div>
     <template v-if="image">
       <div v-for="i of image" :key="i.id">
         <img :src="i" alt="" srcset="" />
@@ -48,3 +48,8 @@ export default {
   ],
 };
 </script>
+<style scoped>
+.pre-formatted {
+  white-space: pre;
+}
+</style>
